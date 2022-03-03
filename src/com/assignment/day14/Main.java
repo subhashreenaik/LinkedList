@@ -16,6 +16,7 @@ public class Main {
 	* 3.Appending data to linkedList
 	* 4.Inserting data between two node
 	* 5.Searching key element
+	* 6.Deleting element of the list
 	
 	*/
 
@@ -54,6 +55,12 @@ public class Main {
 	
 	//Inserting 40 after 30
 	list.insert(list.head.next.next,40);
+	
+	/*
+	 * 6.Deleting element of the list
+	 * 
+	 * */
+	list.delete(40);
 	
 	//Printing the linkedList
 	

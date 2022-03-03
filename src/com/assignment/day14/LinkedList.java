@@ -8,6 +8,7 @@ public class LinkedList {
 	* insert -This method is inserting data between two node
 	* removeFirstNode-this method delete the first node of the linked list
 	* search- this method search the key element
+	* delete -This method deleting the key element
 	* @param data - accepting data to put it in linkedList
 	*/
 	
@@ -84,4 +85,23 @@ public class LinkedList {
 	        }
 	        return false;    
 	    }
+	 void delete(int key)
+	    {
+	      
+	        Node temp = head, prev = null;
+	        if (temp != null && temp.data == key) {
+	            head = temp.next; 
+	            return;
+	        }   
+	        while (temp != null && temp.data != key) {
+	            prev = temp;
+	            temp = temp.next;
+	        }
+	        if (temp == null)
+	            return;
+	        prev.next = temp.next;
+	    }
+	 
+	    
+	 
 }
