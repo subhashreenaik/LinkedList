@@ -44,14 +44,22 @@ public class Main {
 	list.insert(list.head,30);
 	
 	/*
-	 * 4.Removing first node of the list
+	 * 5.Removing first node of the list
 	 * */
 	
 	list.removeFirstNode(list.head);
 	
+	/*
+	 * 5.Searching element of the list
+	 * 
+	 * */
+	list.search(list.head, 70);
+	
 	//Printing the linkedList
+	
 	list.printLinkedList(list.removeFirstNode(list.head));
 	System.out.println();
+	System.out.println("The element is present   "+list.search(list.head, 70));
 
 	}
 }
