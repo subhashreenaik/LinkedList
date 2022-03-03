@@ -43,8 +43,14 @@ public class Main {
 	
 	list.insert(list.head,30);
 	
+	/*
+	 * 4.Removing first node of the list
+	 * */
+	
+	list.removeFirstNode(list.head);
+	
 	//Printing the linkedList
-	list.printLinkedList();
+	list.printLinkedList(list.removeFirstNode(list.head));
 	System.out.println();
 
 	}
