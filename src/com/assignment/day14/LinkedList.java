@@ -6,6 +6,8 @@ public class LinkedList {
 	* append - this method is created to append data to linkedList
 	* printLinkedList -This method is created to print the list data
 	* insert -This method is inserting data between two node
+	* removeFirstNode-this method delete the first node of the linked list
+	* search- this method search the key element
 	* @param data - accepting data to put it in linkedList
 	*/
 	
@@ -70,4 +72,16 @@ public class LinkedList {
         return head = head.next;
  
     }
+	
+	 public boolean search(Node head, int x)
+	    {
+	        Node current = head;    
+	        while (current != null)
+	        {
+	            if (current.data == x)
+	                return true;    
+	            current = current.next;
+	        }
+	        return false;    
+	    }
 }
