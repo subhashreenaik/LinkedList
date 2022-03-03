@@ -13,7 +13,7 @@ public class Main {
 	* PROCEDURE
 	* 1. Creating Lined list
 	* 2. Adding nodes to linkedList
-	* 3. Printing linedList after adding nodes
+	* 3.Appending data to linkedList
 	
 	*/
 
@@ -28,9 +28,14 @@ public class Main {
 	list.add(70);
 	list.add(30);
 	list.add(56);
+	
 	/*
-	* 3. Printing linedList after adding nodes
+	* 3. Appending data to linkedList
 	*/
+	list.append(56);
+	list.append(30);
+	list.append(70);
+	
 	list.printLinkedList();
 	System.out.println();
 
