@@ -8,7 +8,7 @@ public class LinkedList {
 	 */
 	public static void main(String[] args) {
 		
-	   System.out.println("Welcom LinkedList Program");
+	  
 		
 		Node head=new Node(70);
 		Node second=new Node(30);
