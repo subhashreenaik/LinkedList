@@ -50,7 +50,7 @@ public class LinkedList {
 	}
 
 	
-	public void printLinkedList(){
+	public void printLinkedList(Node head){
 		if (head == null) {
 		System.out.println("LinkedList is empty");
 		} else {
@@ -61,4 +61,13 @@ public class LinkedList {
 		}
 		}
 		}
+	
+	public Node  removeFirstNode(Node head)
+    {
+		 if (head == null)
+	            return null;
+        Node temp = head;
+        return head = head.next;
+ 
+    }
 }
