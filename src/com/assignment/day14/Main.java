@@ -62,10 +62,22 @@ public class Main {
 	 * */
 	list.delete(40);
 	
-	//Printing the linkedList
+	/*
+	 * 7. Removing the first nodefrom the linkedList
+	 */
 	
 	list.printLinkedList(list.removeFirstNode(list.head));
+	
+	/*
+	 * 8 .Sorting element of the list
+	 * 
+	 * */
+	list.sortList();
+	
 	System.out.println();
+	list.printLinkedList(list.head);
+	
+	
 	
 
 	}
