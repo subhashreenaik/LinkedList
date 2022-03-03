@@ -15,6 +15,7 @@ public class Main {
 	* 2. Adding nodes to linkedList
 	* 3.Appending data to linkedList
 	* 4.Inserting data between two node
+	* 5.Searching key element
 	
 	*/
 
@@ -42,24 +43,23 @@ public class Main {
 	 * */
 	
 	list.insert(list.head,30);
-	
-	/*
-	 * 5.Removing first node of the list
-	 * */
-	
-	list.removeFirstNode(list.head);
-	
+
 	/*
 	 * 5.Searching element of the list
 	 * 
 	 * */
 	list.search(list.head, 70);
+	System.out.println("The element is present   "+list.search(list.head, 70));
+	
+	
+	//Inserting 40 after 30
+	list.insert(list.head.next.next,40);
 	
 	//Printing the linkedList
 	
 	list.printLinkedList(list.removeFirstNode(list.head));
 	System.out.println();
-	System.out.println("The element is present   "+list.search(list.head, 70));
+	
 
 	}
 }
