@@ -14,6 +14,7 @@ public class Main {
 	* 1. Creating Lined list
 	* 2. Adding nodes to linkedList
 	* 3.Appending data to linkedList
+	* 4.Inserting data between two node
 	
 	*/
 
@@ -36,6 +37,13 @@ public class Main {
 	list.append(30);
 	list.append(70);
 	
+	/*
+	 * 4.Inserting data between two node
+	 * */
+	
+	list.insert(list.head,30);
+	
+	//Printing the linkedList
 	list.printLinkedList();
 	System.out.println();
 

@@ -5,6 +5,7 @@ public class LinkedList {
 	* add - this method is created to add data to linkedList
 	* append - this method is created to append data to linkedList
 	* printLinkedList -This method is created to print the list data
+	* insert -This method is inserting data between two node
 	* @param data - accepting data to put it in linkedList
 	*/
 	
@@ -32,6 +33,22 @@ public class LinkedList {
         last.next = new_node;
         return;
     }
+	
+	
+	public void insert(Node node, int new_data)
+	{
+	
+		if (node == null) {
+			System.out.println("The given  node cannot be null");
+			return;
+		}
+
+		Node new_node = new Node(new_data);
+
+			new_node.next = node.next;
+		    node.next = new_node;
+	}
+
 	
 	public void printLinkedList(){
 		if (head == null) {
